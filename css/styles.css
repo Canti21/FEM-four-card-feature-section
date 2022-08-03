@@ -1,0 +1,186 @@
+:root
+{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+body
+{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    margin: 0;
+    padding: 2rem;
+    min-height: calc(100vh - 4rem);
+    text-align: center;
+}
+
+main
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title
+{
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: var(--very-dark-blue);
+    margin: 0;
+}
+
+.main-title span
+{
+    font-weight: 600;
+}
+
+.main-paragraph
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--grayish-blue);
+    margin: 1.5rem auto 4rem;
+}
+
+.cards-container
+{
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card
+{
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    position: relative;
+    width: calc(100% - 4.8rem);
+    max-width: 28rem;
+    text-align: left;
+    padding: 2.4rem;
+    border-radius: 0.8rem;
+    box-shadow: 0px 8px 18px 0px hsla(229, 41%, 42%, 0.219);
+}
+
+.card h2
+{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+    margin: 0;
+}
+
+.card p
+{
+    font-size: 1.3rem;
+    color: var(--grayish-blue);
+    margin: 0.6rem 0;
+}
+
+.icon-container
+{
+    height: 6rem;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+}
+
+.card .icon
+{
+    margin: 0;
+    width: 6rem;
+    height: 6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: right;
+    justify-self: end;
+    align-self: flex-end;
+}
+
+.supervisor
+{
+    border-top: 0.45rem solid var(--cyan);
+}
+
+.supervisor .icon
+{
+    background-image: url(../images/icon-supervisor.svg);
+}
+
+.team-builder
+{
+    border-top: 0.45rem solid var(--red);
+}
+
+.team-builder .icon
+{
+    background-image: url(../images/icon-team-builder.svg);
+}
+
+.karma
+{
+    border-top: 0.45rem solid var(--orange);
+}
+
+.karma .icon
+{
+    background-image: url(../images/icon-karma.svg);
+}
+
+.calculator
+{
+    border-top: 0.45rem solid var(--blue);
+}
+
+.calculator .icon
+{
+    background-image: url(../images/icon-calculator.svg);
+}
+
+footer
+{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+}
+
+.attribution
+{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a
+{
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:focus-visible
+{
+    font-weight: bold;
+}
+
+#canti
+{
+    color: darkred;
+}
